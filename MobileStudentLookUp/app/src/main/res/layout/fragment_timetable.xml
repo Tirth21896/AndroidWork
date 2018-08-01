@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".ProfileActivity">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo" />
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/TimeTale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TimeTable :"
+                android:textSize="24dp" />
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@android:color/black"
+                android:gravity="center_horizontal"
+                android:scrollbars="horizontal|vertical"
+                android:showDividers="beginning|middle|end">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@android:color/black"
+                    android:gravity="center_vertical|center_horizontal|center"
+                    android:padding="10dp"
+                    android:scrollbars="horizontal|vertical"
+                    android:showDividers="beginning|middle|end">
+
+                    <TextView
+                        android:id="@+id/periodLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Period"
+                        android:textColorLink="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/classLable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ClassCode"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/Room_No"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Room No."
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/absentLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Absent"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/lateLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Late" />
+
+                    <TextView
+                        android:id="@+id/teacherLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Teacher"
+                        android:textSize="16sp" />
+                </TableRow>
+            </TableLayout>
+
+
+        </android.support.v7.widget.LinearLayoutCompat>
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    </RelativeLayout>
+
+
